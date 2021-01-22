@@ -13,8 +13,10 @@ class CategoryItem extends StatelessWidget {
       // Inkwell: có thể bấm onTap như button
       onTap: () {
         print('aaaaa: ${this.category.content}');
-        Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => FoodsPage(category: this.category)));
+        // Navigator.of(context).push(MaterialPageRoute(
+        //     builder: (context) => FoodsPage(category: this.category)));
+        Navigator.pushNamed(context, FoodsPage.routeName,
+            arguments: {'category': category});
       },
       splashColor: Colors.deepPurple, // bấm vào inkwell sẽ nháy sáng
       child: Container(
@@ -24,10 +26,10 @@ class CategoryItem extends StatelessWidget {
           children: <Widget>[
             Text(this.category.content,
                 style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    fontFamily: 'Itim')),
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                )),
           ],
         ),
         decoration: BoxDecoration(
