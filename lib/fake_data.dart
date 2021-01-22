@@ -43,6 +43,7 @@ var FAKE_FOODS = [
           "https://upload.wikimedia.org/wikipedia/commons/0/0b/KansaiSushi.jpg",
       complexity: Complexity.Simple,
       duration: Duration(minutes: 20),
+      ingredients: [],
       categoryId: 1),
   Food(
       name: "Tempura",
@@ -50,6 +51,7 @@ var FAKE_FOODS = [
           "https://upload.wikimedia.org/wikipedia/commons/a/ac/Peixinhos_da_horta.jpg",
       duration: Duration(minutes: 15),
       complexity: Complexity.Simple,
+      ingredients: [],
       categoryId: 1),
   Food(
       name: "Neapolitan pizza",
@@ -65,6 +67,7 @@ var FAKE_FOODS = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sashimi_-_Tokyo_-_Japan.jpg/2880px-Sashimi_-_Tokyo_-_Japan.jpg",
       duration: Duration(hours: 1, minutes: 5),
       complexity: Complexity.Medium,
+      ingredients: [],
       categoryId: 1),
   Food(
       name: "Homemade Humburger",
@@ -72,5 +75,6 @@ var FAKE_FOODS = [
           "https://upload.wikimedia.org/wikipedia/commons/5/58/Homemade_hamburger.jpg",
       duration: Duration(minutes: 20),
       complexity: Complexity.Hard,
+      ingredients: [],
       categoryId: 3),
 ];
